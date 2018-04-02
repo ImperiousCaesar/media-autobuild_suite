@@ -1277,7 +1277,7 @@ set scripts=compile helper update
 for %%s in (%scripts%) do (
     if not exist "%build%\media-suite_%%s.sh" (
         %instdir%\%msys2%\usr\bin\wget.exe -t 20 --retry-connrefused --waitretry=2 -c ^
-        https://github.com/jb-alvarado/media-autobuild_suite/raw/master/build/media-suite_%%s.sh
+        https://github.com/ImperiousCaesar/media-autobuild_suite/raw/master/build/media-suite_%%s.sh
         )
     )
 if %updateSuite%==y (
