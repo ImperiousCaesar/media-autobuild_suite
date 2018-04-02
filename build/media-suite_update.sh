@@ -31,7 +31,7 @@ if [[ "$update" = "yes" ]]; then
     echo
 
     if [[ ! -d ../.git ]] && which git > /dev/null; then
-        if ! git clone "https://github.com/jb-alvarado/media-autobuild_suite.git" ab-git; then
+        if ! git clone "https://github.com/ImperiousCaesar/media-autobuild_suite.git" ab-git; then
             git -C ab-git fetch
         fi
         cp -fr ab-git/.git ..
